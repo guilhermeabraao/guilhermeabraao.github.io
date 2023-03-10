@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(3, 3, 44);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 250px;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 200px;
+    display: flex;
+
+}
+
+
+.bannerSquare {
+    position: absolute;
+    top: 185px;
+    left: 240px;
+}
+
+.bannerBalls {
+    height: 60px;
+    object-fit: none;
+    object-position: 7% top;
+    position: absolute;
+    top: 598.5px;
+    right: 400px;
+}
+
+.bannerHeader {
+    width: 1392px;
+    height: 404px;
+    left: 132px;
+    top: 202px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photoDiv {
+    height: 200px;
+    width: 70%;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 634;
+    font-size: 55px;
+    line-height: 68px;
+}
+
+.divName {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profilePhoto {
+    height: 300px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.aboutDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+}
+
+.vectorDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+button {
+    height: 150px;
+    width: 400px;
+    font-weight: 634;
+    font-size: 40px;
+    line-height: 68px;
+    color: white;
+    background: linear-gradient(180deg, #16161A 61.51%, #3D2C73 100%);
+    box-shadow: 0px 4px 22px rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    border-color: white;
+    cursor: pointer;
+}
+
+.buttonLeft {
+    position: relative;
+    left: 200px;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    transition: 1s;
+}
+
+.buttonRight {
+    position: relative;
+    left: 1100px;
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    transition: 1s;
+}
+
+.dotsLeft {
+    transform: rotate(90deg);
+    position: absolute;
+    top: -80px;
+    left: 450px;
+    z-index: -1;
+}
+
+.dotsRight {
+    transform: rotate(270deg);
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    z-index: -1;
+}
+
+.slideEffect {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.buttonBalls {
+    position: absolute;
+    z-index: -1;
+}
+
+.ballsLeft {
+    top: 105px;
+    left: -47px;
+}
+
+.ballsRight {
+    top: 105px;
+    left: 294px;
+}
